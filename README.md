@@ -1,2 +1,32 @@
 # News-Web-With-Api
-i made this web with using html and give my best to it. i use here Api for live updating .
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Surendra News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📰 Surendra News</h1>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search news...">
+            <button onclick="searchNews()">Search</button>
+        </div>
+
+        <nav>
+            <button onclick="getCategory('general')">General</button>
+            <button onclick="getCategory('business')">Business</button>
+            <button onclick="getCategory('technology')">Technology</button>
+            <button onclick="getCategory('sports')">Sports</button>
+            <button onclick="getCategory('health')">Health</button>
+        </nav>
+    </header>
+
+    <main id="newsContainer"></main>
+
+    <script src="script.js"></script>
+</body>
+</html>
